@@ -1,0 +1,50 @@
+-- db_telebot.tb_producto definition
+CREATE TABLE `tb_producto` (
+  `id_producto` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(45) DEFAULT NULL,
+  `origen` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_producto`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+
+datos:
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Smartphone iPhone 16', 'Estados Unidos');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Smartphone Galaxy S21', 'Corea del Sur');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Laptop MacBook Pro', 'Estados Unidos');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Zapatillas deportivas Nike Air', 'Vietnam');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Café arábica', 'Colombia');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Queso Parmesano', 'Italia');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Reloj Casio G-Shock', 'Japón');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Chocolate Lindt', 'Suiza');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Tequila Don Julio', 'México');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Aceite de oliva extra virgen', 'España');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Vino Malbec', 'Argentina');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Cámara Canon EOS', 'Japón');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Té verde Matcha', 'Japón');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Salmón ahumado', 'Noruega');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Vodka Absolut', 'Suecia');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Perfume Chanel No. 5', 'Francia');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Cerveza Guinness', 'Irlanda');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Tableta Amazon Fire', 'China');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Automóvil BMW Serie 3', 'Alemania');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Whisky Johnnie Walker', 'Escocia');
+INSERT INTO tb_producto (descripcion, origen) VALUES ('Pasta Barilla', 'Italia');
+
+
+
+<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
+<dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.13.4</version>
+</dependency>
+
+
+//zxing
+<dependency>
+    <groupId>com.google.zxing</groupId>
+    <artifactId>javase</artifactId>
+    <version>3.4.1</version>
+</dependency>
